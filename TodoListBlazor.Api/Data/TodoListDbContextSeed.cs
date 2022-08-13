@@ -4,7 +4,7 @@ using System;
 using System.Linq;
 using TodoListBlazor.Api.Enities;
 using Task = System.Threading.Tasks.Task;
-using TodoListBlazor.Api.Enums;
+using TodoList.Model.Enums;
 
 namespace TodoListBlazor.Api.Data
 {
@@ -35,7 +35,7 @@ namespace TodoListBlazor.Api.Data
                     Id = Guid.NewGuid(),
                     Name = "Same task 1",
                     CreateDate = DateTime.Now,
-                    Priority = Enums.Priority.High,
+                    Priority = Priority.High,
                     Status = Status.Open
                 });
             }

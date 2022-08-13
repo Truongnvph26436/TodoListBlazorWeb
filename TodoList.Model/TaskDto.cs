@@ -1,23 +1,21 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using TodoList.Model.Enums;
 
-namespace TodoListBlazor.Api.Enities
+namespace TodoList.Model
 {
-    public class Task
+    public class TaskDto
     {
-        [Key]
         public Guid Id { get; set; }
 
-        [MaxLength(250)]
-        [Required]
         public string Name { get; set; }
 
         public Guid? AssigneeId { get; set; }
 
-        [ForeignKey("AssigneeId")]
-        public User Assignee { get; set; }
+        public string AssigneeName { get; set; }
 
         public DateTime CreateDate { get; set; }
 
