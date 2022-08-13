@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoListBlazorWeb", "TodoLi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoListBlazor.Api", "TodoListBlazor.Api\TodoListBlazor.Api.csproj", "{611617A1-92E8-459F-B4DC-3EAFE56CE66B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.Model", "TodoList.Model\TodoList.Model.csproj", "{A9461DB8-809B-46EF-92BD-E59FF259610E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoList.Model", "TodoList.Model\TodoList.Model.csproj", "{A9461DB8-809B-46EF-92BD-E59FF259610E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

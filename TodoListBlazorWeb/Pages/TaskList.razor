@@ -1,0 +1,50 @@
+﻿@page "/tasklist"
+@using TodoListBlazorWeb.Components
+
+<h3>Todo List</h3>
+
+@if (Task == null)
+{
+    //Chưa load được
+    <LoadingIndicator></LoadingIndicator>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Priority
+                </th>
+                <th>
+                    Assignee
+                </th>
+                <th>
+                    Date
+                </th>
+                <th>
+                    Status
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Task)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Priority</td>
+                    <td>@item.AssigneeName</td>
+                    <td>@item.CreateDate.ToString("dd/MM/yyy hh:mm")</td>
+                    <td>@item.Status</td>
+                    <td>
+                        <a href="/taskDetails/@item.Id">Detail</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
